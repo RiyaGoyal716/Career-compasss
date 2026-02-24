@@ -54,7 +54,7 @@ function Home() {
     formData.append("job_description", jobDescription);
 
     try {
-      const response = await fetch("http://localhost:8000/analyze", {
+     const response = await fetch("https://career-compass-backend-p28z.onrender.com/analyze", {
         method: "POST",
         body: formData,
       });
